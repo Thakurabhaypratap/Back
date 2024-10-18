@@ -31,7 +31,7 @@ const userSchema = new mongoose.Schema({
     isActive: {type: Boolean, default: true},
     created_at: {type: Date, default: Date.now},
     updated_at: {type: Date, default: Date.now}
-})
+},{timestamps : true})
 
 export const User = mongoose.model("User" ,  userSchema)
 
